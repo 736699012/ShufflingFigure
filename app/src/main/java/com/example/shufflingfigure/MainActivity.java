@@ -120,10 +120,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
+
 
     private void initPoints() {
         for (int i = 0; i < mShufflingAdapter.getDataRealSize(); i++) {
