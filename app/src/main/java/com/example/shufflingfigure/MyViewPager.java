@@ -19,10 +19,11 @@ public class MyViewPager extends ViewPager {
         super(context, attrs);
     }
 
+
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
 
-        switch (ev.getAction()){
+        switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 if (mOnViewPagerTouchListen != null) {
                     mOnViewPagerTouchListen.onViewPagerTouch(true);
@@ -38,11 +39,11 @@ public class MyViewPager extends ViewPager {
         return super.onTouchEvent(ev);
     }
 
-    public void setOnViewPagerTouchListen(OnViewPagerTouchListen onViewPagerTouchListen){
+    public void setOnViewPagerTouchListen(OnViewPagerTouchListen onViewPagerTouchListen) {
         this.mOnViewPagerTouchListen = onViewPagerTouchListen;
     }
 
-    public interface OnViewPagerTouchListen{
+    public interface OnViewPagerTouchListen {
         void onViewPagerTouch(boolean isTouch);
     }
 }
