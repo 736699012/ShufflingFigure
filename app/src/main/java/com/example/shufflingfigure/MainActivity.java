@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         mHandler = new Handler();
     }
 
+    public void testMeasure(){}
+
     @Override
     public void onAttachedToWindow() {
         Log.d(TAG, "onAttachedToWindow...");
