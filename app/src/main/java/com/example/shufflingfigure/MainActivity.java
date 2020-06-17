@@ -1,18 +1,16 @@
 package com.example.shufflingfigure;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
         initView();
         mHandler = new Handler();
     }
+
+
+
+
+
+    public void testMeasure(){}
+
+    public void test2(){}
 
     @Override
     public void onAttachedToWindow() {
